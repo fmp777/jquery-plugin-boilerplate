@@ -1,5 +1,9 @@
 # jquery-plugin-boilerplate
-Slightly modified version of jquery-boilerplate.  This version makes your life easier by allowing direct calling of plugin functions with arguments.  It also allows for recursive options/settings extension whereas the original will overwrite your multidimensional settings.
+Slightly modified version of [jquery-boilerplate](https://github.com/jquery-boilerplate/jquery-boilerplate).  This version makes your life easier by allowing direct calling of plugin functions with arguments and recursive options/settings extension whereas the original will overwrite your multidimensional settings.
+
+Also removed all the coffeescript compile and minification bloat.  Its a boilerplate not a plugin.  Copy, paste, and modify!
+
+### Explanation of the differences
 
 In the original to call your function, you had to have the plugin object saved to variable OR you needed to get it by calling 
 ```js
@@ -23,13 +27,6 @@ $(element).defaultPluginName('method', [arg1, arg2, arg3]); // will call yourOth
 // instantiate if needed and call function with single argument
 $(element).defaultPluginName('method', singleArgument); // will call yourOtherFunction(singleArgument)
 ```
-
-
-### A jump-start for jQuery plugins development (original description)
-
-So, you've tried your hand at writing jQuery plugins and you're comfortable putting together something that probably works. Awesome! Thing is, you think there might be better ways you could be writing them - you've seen them done a number of different ways in the wild, but aren't really sure what the differences between these patterns are or how to get started with them.
-
-This project won't seek to provide a perfect solution to every possible pattern, but will attempt to cover a simple template for beginners and above. By using a basic defaults object, simple constructor for assigning the element to work with and extending options with defaults and a lightweight wrapper around the constructor to avoid issues with multiple instantiations.
 
 ## Usage
 
