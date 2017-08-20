@@ -25,10 +25,10 @@ $("#element").defaultPluginName({
 });
 
 // instantiate if needed and call function with multiple arguments
-$("#element").defaultPluginName('method', [arg1, arg2, arg3]); // will call yourOtherFunction(arg1, arg2, arg3)
+$("#element").defaultPluginName('callMeWithShortcut', [arg1, arg2, arg3]); // will call callMeWithShortcut(arg1, arg2, arg3)
 
 // instantiate if needed and call function with single argument
-$("#element").defaultPluginName('method', singleArgument); // will call yourOtherFunction(singleArgument)
+$("#element").defaultPluginName('callMeWithShortcut', singleArgument); // will call callMeWithShortcut(singleArgument)
 ```
 
 ## Usage
@@ -56,5 +56,5 @@ $("#element").defaultPluginName('method', singleArgument); // will call yourOthe
 4. Instantiate the plugin without options (if needed) AND call your function:
 
 	```javascript
-	$("#element").defaultPluginName('yourOtherFunction', ['a custom value', arg2, arg3]);
+	$("#element").defaultPluginName('callMeWithShortcut', ['test1', {abc:123}, false]);
 	```
