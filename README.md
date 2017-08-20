@@ -1,5 +1,8 @@
 # jquery-plugin-boilerplate
-Slightly modified version of [jquery-boilerplate](https://github.com/jquery-boilerplate/jquery-boilerplate).  This version makes your life easier by allowing direct calling of plugin functions with arguments and recursive options/settings extension whereas the original will overwrite your multidimensional settings.
+Slightly modified version of [jquery-boilerplate](https://github.com/jquery-boilerplate/jquery-boilerplate).  This version makes your life easier by:
+1. Direct calling of plugin functions without having to store plugin object or call the plugin object from data()
+2. Recursive options/settings extension whereas the original will overwrite your multidimensional settings
+3. More useful comments for beginners
 
 Also removed all the coffeescript compile and minification bloat.  Its a boilerplate not a plugin.  Copy, paste, and modify!
 
