@@ -67,7 +67,6 @@
     //      $(element).defaultPluginName({option: value}) // instantiate
     //      $(element).defaultPluginName('method', [arg1, arg2, arg3]) will call yourOtherFunction(arg1, arg2, arg3)
     //      $(element).defaultPluginName('method', singleArgument) will call yourOtherFunction(singleArgument)
-
     $.fn[ pluginName ] = function( options, args ) {
         return this.each( function() {
             var $plugin = $.data( this, "plugin_" + pluginName );
