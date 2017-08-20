@@ -39,13 +39,19 @@
             
             // you can add more functions like the one below and
             // call them like the example bellow
-            this.yourOtherFunction( "jQuery Plugin Boilerplate" );
+            this.yourOtherFunction( "jQuery Plugin Boilerplate Initialized" );
         },
         
         yourOtherFunction: function( text ) {
 
             // some logic
             $( this.element ).text( text );
+        },
+        
+        callMeWithShortcut: function ( arg1, arg2, arg3 ) {
+            
+            alert('callMeWithShortcut '+arg1+' '+arg2+' '+arg3);
+            console.log([arg1, arg2, arg3], 'callMeWithShortcut');
         }
     } );
 
@@ -55,8 +61,8 @@
     // OR you can instantiate and call function at the same time if you have no options to pass
     // EXAMPLES:
     //      $(element).defaultPluginName({optin: value}) // instantiate
-    //      $(element).defaultPluginName('method', [arg1, arg2, arg3]) will call yourOtherFunction(arg1, arg2, arg3)
-    //      $(element).defaultPluginName('method', singleArgument) will call yourOtherFunction(singleArgument)
+    //      $(element).defaultPluginName('callMeWithShortcut', [arg1, arg2, arg3]) will run callMeWithShortcut(arg1, arg2, arg3)
+    //      $(element).defaultPluginName('callMeWithShortcut', singleArgument) will run callMeWithShortcut(singleArgument)
     $.fn[ pluginName ] = function( options, args ) {
         
         return this.each( function() {
