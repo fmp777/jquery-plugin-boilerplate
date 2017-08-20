@@ -59,17 +59,6 @@
         }
     } );
 
-    // A really lightweight plugin wrapper around the constructor,
-    // preventing against multiple instantiations
-    $.fn[ pluginName ] = function( options ) {
-        return this.each( function() {
-            if ( !$.data( this, "plugin_" + pluginName ) ) {
-                $.data( this, "plugin_" +
-                    pluginName, new Plugin( this, options ) );
-            }
-        } );
-    };
-
     // A lightweight plugin wrapper around the constructor,
     // preventing against multiple instantiations and allows calling of plugin functions with arguments
     // You can instantiate your plugin first passing options, then subsequent calls will allow calling your functions
