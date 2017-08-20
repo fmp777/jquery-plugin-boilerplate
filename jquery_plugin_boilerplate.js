@@ -50,7 +50,7 @@
             // and this.settings
             // you can add more functions like the one below and
             // call them like the example bellow
-            this.yourOtherFunction( "jQuery Boilerplate" );
+            this.yourOtherFunction( "jQuery Plugin Boilerplate" );
         },
         yourOtherFunction: function( text ) {
 
@@ -64,7 +64,7 @@
     // You can instantiate your plugin first passing options, then subsequent calls will allow calling your functions
     // OR you can instantiate and call function at the same time if you have no options to pass
     // EXAMPLES:
-    //      $(element).defaultPluginName({optin: value}) // instantiate
+    //      $(element).defaultPluginName({option: value}) // instantiate
     //      $(element).defaultPluginName('method', [arg1, arg2, arg3]) will call yourOtherFunction(arg1, arg2, arg3)
     //      $(element).defaultPluginName('method', singleArgument) will call yourOtherFunction(singleArgument)
 
