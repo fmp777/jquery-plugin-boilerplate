@@ -56,5 +56,5 @@ $("#element").defaultPluginName('method', singleArgument); // will call yourOthe
 4. Instantiate the plugin without options (if needed) AND call your function:
 
 	```javascript
-	$("#element").defaultPluginName('yourOtherFunction', [arg1, arg2, arg3]);
+	$("#element").defaultPluginName('yourOtherFunction', ['a custom value', arg2, arg3]);
 	```
