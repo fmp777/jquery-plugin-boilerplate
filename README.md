@@ -53,7 +53,7 @@ $("#element").defaultPluginName('method', singleArgument); // will call yourOthe
 	});
 	```
 
-3. Instantiate the plugin without options (if needed) AND call your function:
+4. Instantiate the plugin without options (if needed) AND call your function:
 
 	```javascript
 	$("#element").defaultPluginName('yourOtherFunction', [arg1, arg2, arg3]);
