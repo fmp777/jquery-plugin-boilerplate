@@ -73,10 +73,8 @@
                 $plugin = $.data( this, "plugin_" + pluginName, new Plugin( this, pluginOptions ) );
             }
 
-            if (typeof options === 'string')
-            {
-                if (typeof $plugin[options] === 'function')
-                {
+            if (typeof options === 'string') {
+                if (typeof $plugin[options] === 'function') {
                     if (typeof args !== 'object') args = [args];
                     $plugin[options].apply($plugin, args);
                 }
