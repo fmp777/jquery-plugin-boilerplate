@@ -12,7 +12,7 @@ In the original jquery-boilerplate, to call your function, you needed to have th
 ```js
 var plugin = $("#element").data('plugin_YourPluginName');
 // before you could call
-plugin.yourFunciton(arg1,arg2,arg3);
+plugin.yourFunction(arg1,arg2,arg3);
 ```
 
 This version of boilerplate allows for a much shorter route to your plugin methods, even a shortcut to instantiate and call method in one go.  Below illustrates the difference and their usage:
@@ -59,5 +59,6 @@ $("#element").defaultPluginName('callMeWithShortcut', singleArgument); // will c
 4. Instantiate the plugin without options (if needed) AND call your function:
 
 	```javascript
+	//				'method name'		[ an array of your args ]
 	$("#element").defaultPluginName('callMeWithShortcut', ['test1', {abc:123}, false]);
 	```
